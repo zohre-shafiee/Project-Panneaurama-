@@ -1,0 +1,95 @@
+/* =========================================
+   Variables Globales
+   ========================================= */
+:root {
+    --border-color-base: #a2a9b1;
+    --background-color-disabled: #dadde3;
+}
+
+/* =========================================
+   Typographie Phonétique et Utilitaires
+   ========================================= */
+.API {
+    font-family: 'DejaVu Sans', 'Doulos SIL', 'Lucida Grande', 'Segoe UI', 'Arial Unicode MS', 'Adobe Pi Std', 'Lucida Sans Unicode', 'Chrysanthi Unicode', Code2000, Gentium, GentiumAlt, 'TITUS Cyberbit Basic', 'Bitstream Vera Sans', 'Bitstream Cyberbit', 'Hiragino Kaku Gothic Pro', 'Matrix Unicode', sans-serif;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* =========================================
+   Style Global des Tableaux
+   ========================================= */
+table {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0.5em auto;
+    border-collapse: collapse; /* Préférable à cellspacing="0" pour fusionner les bordures */
+    width: 100%;
+    text-align: center;
+}
+
+/* =========================================
+   Lignes et Alignements
+   ========================================= */
+tr {
+    font-size: 13px;
+}
+
+/* Alignement en bas pour les lignes d'en-tête spécifiques (Modes et Pulmoniques) */
+tr:nth-child(1), 
+tr:nth-child(3), 
+tr:nth-last-child(2) {
+    vertical-align: bottom;
+}
+
+/* =========================================
+   Cellules (td, th) et Bordures Standard
+   ========================================= */
+td, th {
+    padding: 1px 2px;
+    /* Applique une grille de base par défaut à toutes les cellules */
+    border-top: thin solid var(--border-color-base);
+    border-left: thin solid var(--border-color-base);
+}
+
+/* Suppression des bordures pour les cellules directrices (Mode/Point d'articulation) */
+td[scope="col"], 
+td[scope="row"] {
+    border: none;
+}
+
+/* Restauration ciblée pour la deuxième ligne d'en-tête (Labial, Coronal...) */
+tr:nth-child(2) td {
+    border-top: thin solid var(--border-color-base);
+    border-right: none;
+}
+
+/* =========================================
+   Exceptions de style (À lier plus tard)
+   ========================================= */
+/* * Pour appliquer ces styles spécifiques une fois le HTML nettoyé, 
+ * vous pourrez utiliser class="bg-disabled" et class="border-dashed" 
+ * sur les cellules concernées.
+ */
+
+
+.impossible {
+    background-color: #cdced0;
+}
+/* =========================================
+   Section des Voyelles
+   ========================================= */
+#vowels {
+    margin-top: 2em;
+}
+
+#vowelQuadrilateral table {
+    width: auto;
+    margin: 1em auto;
+}
+
+#vowelQuadrilateral th, 
+#vowelQuadrilateral td {
+    padding: 5px 10px;
+}
