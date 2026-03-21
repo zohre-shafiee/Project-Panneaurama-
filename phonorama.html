@@ -1,1431 +1,760 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>PanneauxRama</title>
-            <meta charset="UTF-8">
-            <link rel="stylesheet" type="text/css" href="style.css" />
-        </head>
-        <body>
+<html>
+	<head>
+		<title>PanneauxRama</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style_tableau.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
 
-            <header>
-                <h1>Projet PanneauxRama</h1>
-            </header>
+	<body>
 
-            <p>
-				<label for="langue-select">Choisissez une langue :</label>
+		<header>
+			<h1>Projet PanneauxRama</h1>
+		</header>
 
-				<select id="langue-select">
-					<option value="">-- Sélectionner une langue --</option>
-				</select>
+		<p>
+			<label for="langue-select">Choisissez une langue :</label>
 
+			<select id="langue-select">
+				<option value="">-- Sélectionner une langue --</option>
+			</select>
 
-				<h2>Consonnes</h2>
- 				<table border="0" cellspacing="0" style="font-size:15px;line-height:1.6;margin:.5em auto;border:0 solid var(--border-color-base, #a2a9b1);padding:0;width:100%;text-align:center">
+			<h2>Consonnes</h2>
+			<table border="0" cellspacing="0" class="consonnes">
+				<tbody>
+					<tr>
+						<td scope="col" rowspan="2">Mode d’articulation</td>
+						<td scope="col" colspan="34">Point d’articulation</td>
 
-					<tbody>
-						<tr style="font-size:10px;vertical-align:bottom">
-							<td style="border:none;padding:1px 2px" scope="col" rowspan="2">Mode d’articulation</td>
-							<td style="border:none;padding:1px 2px" scope="col" colspan="34">Point d’articulation</td>
-							
-							<td style="border:none;padding:1px 2px">&nbsp;</td>
-							
-						</tr>
-							<tr style="font-size:10px">
-							<td style="border:thin solid var(--border-color-base,#a2a9b1);border-right:none;padding:1px 2px" scope="col" colspan="8">Labial
-							</td>
-							<td style="border:thin solid var(--border-color-base,#a2a9b1);border-right:none;padding:1px 2px" scope="col" colspan="12">Coronal
-							</td>
-							<td style="border:thin solid var(--border-color-base,#a2a9b1);border-right:none;padding:1px 2px" scope="col" colspan="10">Dorsal
-							</td>
-							<td style="border:thin solid var(--border-color-base,#a2a9b1);border-right:none;padding:1px 2px" scope="col" colspan="4">Radical
-							</td>
-							<td style="border:thin solid var(--border-color-base,#a2a9b1);border-right:none;padding:1px 2px" scope="col" colspan="2">Glottal
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td></tr>
-							<tr style="font-size:10px;vertical-align:bottom">
-							<td style="padding:1px 2px" scope="col"><u><b>Pulmoniques</b></u>
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Bilabial
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Lab.-dent.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Labial-vél.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Ling.-lab.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Dental
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Alvéol.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Pal.-alv.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Rétro.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Alv.-pal.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Alv.-vél.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Palatal
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Labio-pal.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Vélaire
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Labio-vél.
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Uvulaire
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Pharyngal
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Épiglottal
-							</td>
-							<td style="padding:1px 2px" scope="col" colspan="2">Aucun
-							</td>
-							<td style="padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Nasales
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">m</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɱ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ŋ͡m</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɳ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɲ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ŋ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ŋʷ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɴ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Occl. prénasalisées
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">m͡p</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">m͡b</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ᵑk͡p</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ᵑɡ͡b</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n̼͡d̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡t̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n͡d̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡t</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">n͡d</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɳ͡ʈ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɳ͡ɖ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɲ͡c</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɲ͡ɟ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ŋ͡k</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ŋ͡ɡ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɴ͡q</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span title="Alphabet phonétique international" class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɴ͡ɢ</span>
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Occlusives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">p</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">b</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">p̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">b̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">k͡p</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɡ͡b</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʈ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɖ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">c</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɟ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">k</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɡ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">kʷ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɡʷ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">q</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɢ</span>
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʡ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʔ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Affriquées
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">p͡ɸ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">b͡β</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">p͡f</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">b͡v</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡θ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">d͡ð</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡s</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d͡z</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡ʃ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d͡ʒ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʈ͡ʂ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɖ͡ʐ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡ɕ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d͡ʑ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">c͡ç</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɟ͡ʝ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">k͡x</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɡ͡ɣ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">q͡χ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɢ͡ʁ</span>
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʡ͡ʜ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʔ͡h</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Fric. prénasalisées
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">m͡ɸ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">m͡β</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɱ͡f</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ɱ͡v</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡θ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡ð</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡s</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡z</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡ʃ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">n͡ʒ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ŋ͡k</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API nowrap" title="Alphabet phonétique international" style="font-family:'Segoe UI','DejaVu Sans','Lucida Grande','Lucida Sans Unicode','Arial Unicode MS','Hiragino Kaku Gothic Pro',sans-serif;">ŋ͡ɡ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3); padding:1px 2px" colspan="4">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Fricatives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɸ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">β</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">f</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">v</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">θ̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ð̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">θ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ð</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">s</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">z</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʃ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʒ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʂ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʐ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɕ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʑ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɧ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ç</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʝ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">x</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɣ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">xʷ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɣʷ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">χ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʁ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ħ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʕ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʜ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʢ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">h</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɦ</span>
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Spirantes
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">β̞</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʋ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ð̞</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɹ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɻ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">j</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɥ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɰ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʍ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">w</span>
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Roulées
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʙ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʙ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">r̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">r̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">r</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɽ͡r</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="4">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʀ</span>
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Battues
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ⱱ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɾ̼</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɾ̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɾ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɽ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="4">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Affriquées latér.
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡ɬ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">d͡ɮ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Fricatives latér.
-							</td>
-							<td style="background:var(--background-color-disabled, #dadde3);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɬ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɮ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ꞎ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʎ̝̊</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Spirantes latér.
-							</td>
-							<td style="background:var(--background-color-disabled, #dadde3);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">l̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">l̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">l</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɭ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɫ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʎ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʎ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʟ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Battues latér.
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɺ̼</span>
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɺ</span>
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr style="font-size:10px;vertical-align:bottom">
-							<td scope="col" style="padding:1px 2px"><u><b>Non pulmoniques</b></u>
-							</td>
-							<td style="padding:1px 2px" colspan="31">&nbsp;
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Occl. injectives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɓ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɓ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɠ̊͡ɓ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɠ͡ɓ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɗ̪</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɗ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɗ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʄ̊</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʄ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɠ̊</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɠ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʛ̥</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʛ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Occl. éjectives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">pʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t̪ʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">tʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʈʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">cʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">kʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">qʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px 1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʡʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="2">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Affr. éjectives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t̪͡θʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡sʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">t͡ʃʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʈ͡ʂʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">k͡xʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">q͡χʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Fric. éjectives
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɸʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">fʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">θʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">sʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʃʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʂʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ɕʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">çʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">xʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">χʼ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px">&nbsp;
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Clics centraux
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ʘ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ǀ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px" colspan="2"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ǃ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">*
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ǂ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="6">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr>
-							<tr>
-							<td style="font-size:10px;padding:1px 2px" scope="row">Clics latéraux
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="8">
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2"><span class="API" style="font-family:'DejaVu Sans','Doulos SIL','Lucida Grande','Segoe UI','Arial Unicode MS','Adobe Pi Std','Lucida Sans Unicode','Chrysanthi Unicode',Code2000,Gentium,GentiumAlt,'TITUS Cyberbit Basic','Bitstream Vera Sans','Bitstream Cyberbit','Hiragino Kaku Gothic Pro','Matrix Unicode',sans-serif;">ǁ</span>
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin dashed #AAA;padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-top:thin solid var(--border-color-base,#a2a9b1);border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);padding:1px 2px" colspan="2">&nbsp;
-							</td>
-							<td style="border-bottom:thin solid var(--border-color-base,#a2a9b1);border-left:thin solid var(--border-color-base,#a2a9b1);background:var(--background-color-disabled, #dadde3);padding:1px 2px" colspan="12">
-							</td>
-							<td style="border-left:thin solid var(--border-color-base,#a2a9b1);font-size:10px;padding:1px 2px">
-							</td></tr></tbody></table>
-
-
-
-
-		
-			
-		<div id="vowels">
-		<h2>Voyelles</h2>
-		<div id="vowelQuadrilateral">
-		<table>
-			<thead>
-			<tr>
-				<th></th>
-				<th>Antérieures </th>
-				<th>Mi-antérieures</th>
-				<th>Centrales</th>
-				<th>Mi-postérieures</th>
-				<th>Postérieures</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<th>Fermées</th>
-				<td>
-					<span class='unrounded' title="LATIN SMALL LETTER I">i</span>
-					<span class='rounded' title="U+0079: LATIN SMALL LETTER Y">y</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+0268: LATIN SMALL LETTER I WITH STROKE">ɨ</span>
-					<span class='rounded' title="U+0289: LATIN SMALL LETTER U BAR">ʉ</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+026F: LATIN SMALL LETTER TURNED M">ɯ</span>
-					<span class='rounded' title="U+0075: LATIN SMALL LETTER U">u</span>
-				</td>
-			</tr>
-			<tr>
-				<th>Pré-fermées</th>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+026A: LATIN LETTER SMALL CAPITAL I">ɪ</span>
-					<span class='rounded' title="U+028F: LATIN LETTER SMALL CAPITAL Y">ʏ</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='rounded' title="U+028A: LATIN SMALL LETTER UPSILON">ʊ</span>
-				</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th> Mi-fermées </th>
-				<td>
-					<span class='unrounded' title="U+0065: LATIN SMALL LETTER E">e</span>
-					<span class='rounded' title="U+00F8: LATIN SMALL LETTER O WITH STROKE">ø</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+0258: LATIN SMALL LETTER REVERSED E">ɘ</span>
-					<span class='rounded' title="U+0275: LATIN SMALL LETTER BARRED O">ɵ</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+0264: LATIN SMALL LETTER RAMS HORN">ɤ</span>
-					<span class='rounded' title="U+006F: LATIN SMALL LETTER O">o</span>
-				</td>
-			</tr>
-			<tr>
-				<th>Moyennes</th>
-				<td></td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+0259: LATIN SMALL LETTER SCHWA">ə</span>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th> Mi-ouvertes </th>
-				<td>
-					<span class='unrounded' title="U+025B: LATIN SMALL LETTER OPEN E">ɛ</span>
-					<span class='rounded' title="U+0153: LATIN SMALL LIGATURE OE">œ</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+025C: LATIN SMALL LETTER REVERSED OPEN E">ɜ</span>
-					<span class='rounded' title="U+025E: LATIN SMALL LETTER CLOSED REVERSED OPEN E">ɞ</span>
-				</td>
-				<td></td>
-				<td>
-					<span class='rounded' title="U+028C: LATIN SMALL LETTER TURNED V">ʌ</span>
-					<span class='rounded' title="U+0254: LATIN SMALL LETTER OPEN O">ɔ</span>
-				</td>
-			</tr>
-			<tr>
-				<th> Pré-ouvertes </th>
-				<td>
-					<span class='unrounded' title="U+00E6: LATIN SMALL LETTER AE">æ</span>
-				</td>
-				<td></td>
-				<td>
-					<span title="U+0250: LATIN SMALL LETTER TURNED A">ɐ</span>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th> Ouvertes </th>
-				<td>
-					<span class='unrounded' title="U+0061: LATIN SMALL LETTER A">a</span>
-					<span class='rounded' title="U+0276: LATIN LETTER SMALL CAPITAL OE">ɶ</span>
-				</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>
-					<span class='unrounded' title="U+0251: LATIN SMALL LETTER ALPHA">ɑ</span>
-					<span class='rounded' title="U+0252: LATIN SMALL LETTER TURNED ALPHA">ɒ</span>
-				</td>
-			</tr>
-			</tbody>
+					</tr>
+					<tr>
+						<td scope="col" colspan="8">Labial</td>
+						<td scope="col" colspan="12">Coronal</td>
+						<td scope="col" colspan="10">Dorsal</td>
+						<td scope="col" colspan="4">Radical</td>
+						<td scope="col" colspan="2">Glottal</td>
+					</tr>
+					<tr>
+						<td scope="col"><u><b>Pulmoniques</b></u></td>
+						<td scope="col" colspan="2">Bilabial</td>
+						<td scope="col" colspan="2">Lab.-dent.</td>
+						<td scope="col" colspan="2">Labial-vél.</td>
+						<td scope="col" colspan="2">Ling.-lab.</td>
+						<td scope="col" colspan="2">Dental</td>
+						<td scope="col" colspan="2">Alvéol.</td>
+						<td scope="col" colspan="2">Pal.-alv.</td>
+						<td scope="col" colspan="2">Rétro.</td>
+						<td scope="col" colspan="2">Alv.-pal.</td>
+						<td scope="col" colspan="2">Alv.-vél.</td>
+						<td scope="col" colspan="2">Palatal</td>
+						<td scope="col" colspan="2">Labio-pal.</td>
+						<td scope="col" colspan="2">Vélaire</td>
+						<td scope="col" colspan="2">Labio-vél.</td>
+						<td scope="col" colspan="2">Uvulaire</td>
+						<td scope="col" colspan="2">Pharyngal</td>
+						<td scope="col" colspan="2">Épiglottal</td>
+						<td scope="col" colspan="2">Aucun</td>
+					</tr>
+					<tr>
+						<td scope="row">Nasales</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="bilabial" data-voix="vois">m</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="lab-dent" data-voix="vois">ɱ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="lab-vel" data-voix="vois">ŋ͡m</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="ling-lab" data-voix="vois">n̼</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="dental" data-voix="vois">n̪</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="alveol" data-voix="vois">n</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="retro" data-voix="vois">ɳ</span></td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="palatal" data-voix="vois">ɲ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="velaire" data-voix="vois">ŋ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="labio-vel" data-voix="vois">ŋʷ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="nasal" data-point="uvulaire" data-voix="vois">ɴ</span></td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Occl. prénasalisées</td>
+						<td><span class="API nowrap"  data-mode="occl-prenas" data-point="bilabial" data-voix="non-vois">m͡p</span></td>
+						<td><span  class="API" data-mode="occl-prenas" data-point="bilabial" data-voix="vois">m͡b</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="lab-vel" data-voix="non-vois">ᵑk͡p</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="lab-vel" data-voix="vois">ᵑɡ͡b</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-prenas" data-point="ling-lab" data-voix="vois">n̼͡d̼</span></td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="dental" data-voix="non-vois">n͡t̪</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="dental" data-voix="vois">n͡d̪</span></td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="alveol" data-voix="non-vois">n͡t</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="alveol" data-voix="vois">n͡d</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="retro" data-voix="non-vois">ɳ͡ʈ</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="retro" data-voix="vois">ɳ͡ɖ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="palatal" data-voix="non-vois">ɲ͡c</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="palatal" data-voix="vois">ɲ͡ɟ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="velaire" data-voix="non-vois">ŋ͡k</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="velaire" data-voix="vois">ŋ͡ɡ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="occl-prenas" data-point="uvulaire" data-voix="non-vois">ɴ͡q</span></td>
+						<td><span class="API" data-mode="occl-prenas" data-point="uvulaire" data-voix="vois">ɴ͡ɢ</span></td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Occlusives</td>
+						<td><span class="API" data-mode="occl" data-point="bilabial" data-voix="non-vois">p</span></td>
+						<td><span class="API" data-mode="occl" data-point="bilabial" data-voix="vois">b</span></td>
+						<td><span class="API" data-mode="occl" data-point="lab-dent" data-voix="non-vois">p̪</span></td>
+						<td><span class="API" data-mode="occl" data-point="lab-dent" data-voix="vois">b̪</span></td>
+						<td><span class="API" data-mode="occl" data-point="lab-vel" data-voix="non-vois">k͡p</span></td>
+						<td><span class="API" data-mode="occl" data-point="lab-vel" data-voix="vois">ɡ͡b</span></td>
+						<td><span class="API" data-mode="occl" data-point="ling-lab" data-voix="non-vois">t̼</span></td>
+						<td><span class="API" data-mode="occl" data-point="ling-lab" data-voix="vois">d̼</span></td>
+						<td><span class="API" data-mode="occl" data-point="dental" data-voix="non-vois">t̪</span></td>
+						<td><span class="API" data-mode="occl" data-point="dental" data-voix="vois">d̪</span></td>
+						<td><span class="API" data-mode="occl" data-point="alveol" data-voix="non-vois">t</span></td>
+						<td><span class="API" data-mode="occl" data-point="alveol" data-voix="vois">d</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl" data-point="retro" data-voix="non-vois">ʈ</span></td>
+						<td><span class="API" data-mode="occl" data-point="retro" data-voix="vois">ɖ</span></td>
+						<td>*</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl" data-point="palatal" data-voix="non-vois">c</span></td>
+						<td><span class="API" data-mode="occl" data-point="palatal" data-voix="vois">ɟ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl" data-point="velaire" data-voix="non-vois">k</span></td>
+						<td><span class="API" data-mode="occl" data-point="velaire" data-voix="vois">ɡ</span></td>
+						<td><span class="API" data-mode="occl" data-point="labio-vel" data-voix="non-vois">kʷ</span></td>
+						<td><span class="API" data-mode="occl" data-point="labio-vel" data-voix="vois">ɡʷ</span></td>
+						<td><span class="API" data-mode="occl" data-point="uvulaire" data-voix="non-vois">q</span></td>
+						<td><span class="API" data-mode="occl" data-point="uvulaire" data-voix="vois">ɢ</span></td>
+						<td colspan="2" class="impossible"></td>
+						<td><span class="API" data-mode="occl" data-point="epiglottal">ʡ</span></td>
+						<td class="impossible"></td>
+						<td><span class="API" data-mode="occl" data-point="glottal">ʔ</span></td>
+						<td class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Affriquées</td>
+						<td><span class="API nowrap" data-mode="affr" data-point="bilabial" data-voix="non-vois">p͡ɸ</span></td>
+						<td><span class="API nowrap" data-mode="affr" data-point="bilabial" data-voix="vois">b͡β</span></td>
+						<td><span class="API" data-mode="affr" data-point="lab-dent" data-voix="non-vois">p͡f</span></td>
+						<td><span class="API" data-mode="affr" data-point="lab-dent" data-voix="vois">b͡v</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr" data-point="dental" data-voix="non-vois">t͡θ</span></td>
+						<td><span class="API nowrap" data-mode="affr" data-point="dental" data-voix="vois">d͡ð</span></td>
+						<td><span class="API" data-mode="affr" data-point="alveol" data-voix="non-vois">t͡s</span></td>
+						<td><span class="API" data-mode="affr" data-point="alveol" data-voix="vois">d͡z</span></td>
+						<td><span class="API" data-mode="affr" data-point="pal-alv" data-voix="non-vois">t͡ʃ</span></td>
+						<td><span class="API" data-mode="affr" data-point="pal-alv" data-voix="vois">d͡ʒ</span></td>
+						<td><span class="API" data-mode="affr" data-point="retro" data-voix="non-vois">ʈ͡ʂ</span></td>
+						<td><span class="API" data-mode="affr" data-point="retro" data-voix="vois">ɖ͡ʐ</span></td>
+						<td><span class="API" data-mode="affr" data-point="alv-pal" data-voix="non-vois">t͡ɕ</span></td>
+						<td><span class="API" data-mode="affr" data-point="alv-pal" data-voix="vois">d͡ʑ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="affr" data-point="palatal" data-voix="non-vois">c͡ç</span></td>
+						<td><span class="API nowrap" data-mode="affr" data-point="palatal" data-voix="vois">ɟ͡ʝ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr" data-point="velaire" data-voix="non-vois">k͡x</span></td>
+						<td><span class="API" data-mode="affr" data-point="velaire" data-voix="vois">ɡ͡ɣ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="affr" data-point="uvulaire" data-voix="non-vois">q͡χ</span></td>
+						<td><span class="API" data-mode="affr" data-point="uvulaire" data-voix="vois">ɢ͡ʁ</span></td>
+						<td colspan="2" class="impossible"></td>
+						<td><span class="API" data-mode="affr" data-point="epiglottal">ʡ͡ʜ</span></td>
+						<td class="impossible"></td>
+						<td><span class="API" data-mode="affr" data-point="glottal">ʔ͡h</span></td>
+						<td class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Fric. prénasalisées</td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="bilabial" data-voix="non-vois">m͡ɸ</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="bilabial" data-voix="vois">m͡β</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="lab-dent" data-voix="non-vois">ɱ͡f</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="lab-dent" data-voix="vois">ɱ͡v</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="dental" data-voix="non-vois">n͡θ</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="dental" data-voix="vois">n͡ð</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="alveol" data-voix="non-vois">n͡s</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="alveol" data-voix="vois">n͡z</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="pal-alv" data-voix="non-vois">n͡ʃ</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="pal-alv" data-voix="vois">n͡ʒ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="velaire" data-voix="non-vois">ŋ͡k</span></td>
+						<td><span class="API nowrap" data-mode="fric-prenas" data-point="velaire" data-voix="vois">ŋ͡ɡ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Fricatives</td>
+						<td><span class="API" data-mode="fric" data-point="bilabial" data-voix="non-vois">ɸ</span></td>
+						<td><span class="API" data-mode="fric" data-point="bilabial" data-voix="vois">β</span></td>
+						<td><span class="API" data-mode="fric" data-point="lab-dent" data-voix="non-vois">f</span></td>
+						<td><span class="API" data-mode="fric" data-point="lab-dent" data-voix="vois">v</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric" data-point="ling-lab" data-voix="non-vois">θ̼</span></td>
+						<td><span class="API" data-mode="fric" data-point="ling-lab" data-voix="vois">ð̼</span></td>
+						<td><span class="API" data-mode="fric" data-point="dental" data-voix="non-vois">θ</span></td>
+						<td><span class="API" data-mode="fric" data-point="dental" data-voix="vois">ð</span></td>
+						<td><span class="API" data-mode="fric" data-point="alveol" data-voix="non-vois">s</span></td>
+						<td><span class="API" data-mode="fric" data-point="alveol" data-voix="vois">z</span></td>
+						<td><span class="API" data-mode="fric" data-point="pal-alv" data-voix="non-vois">ʃ</span></td>
+						<td><span class="API" data-mode="fric" data-point="pal-alv" data-voix="vois">ʒ</span></td>
+						<td><span class="API" data-mode="fric" data-point="retro" data-voix="non-vois">ʂ</span></td>
+						<td><span class="API" data-mode="fric" data-point="retro" data-voix="vois">ʐ</span></td>
+						<td><span class="API" data-mode="fric" data-point="alv-pal" data-voix="non-vois">ɕ</span></td>
+						<td><span class="API" data-mode="fric" data-point="alv-pal" data-voix="vois">ʑ</span></td>
+						<td><span class="API" data-mode="fric" data-point="alv-vel" data-voix="non-vois">ɧ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric" data-point="palatal" data-voix="non-vois">ç</span></td>
+						<td><span class="API" data-mode="fric" data-point="palatal" data-voix="vois">ʝ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric" data-point="velaire" data-voix="non-vois">x</span></td>
+						<td><span class="API" data-mode="fric" data-point="velaire" data-voix="vois">ɣ</span></td>
+						<td><span class="API" data-mode="fric" data-point="labio-vel" data-voix="non-vois">xʷ</span></td>
+						<td><span class="API" data-mode="fric" data-point="labio-vel" data-voix="vois">ɣʷ</span></td>
+						<td><span class="API" data-mode="fric" data-point="uvulaire" data-voix="non-vois">χ</span></td>
+						<td><span class="API" data-mode="fric" data-point="uvulaire" data-voix="vois">ʁ</span></td>
+						<td><span class="API" data-mode="fric" data-point="pharyngal" data-voix="non-vois">ħ</span></td>
+						<td><span class="API" data-mode="fric" data-point="pharyngal" data-voix="vois">ʕ</span></td>
+						<td><span class="API" data-mode="fric" data-point="epiglottal" data-voix="non-vois">ʜ</span></td>
+						<td><span class="API" data-mode="fric" data-point="epiglottal" data-voix="vois">ʢ</span></td>
+						<td><span class="API" data-mode="fric" data-point="glottal" data-voix="non-vois">h</span></td>
+						<td><span class="API" data-mode="fric" data-point="glottal" data-voix="vois">ɦ</span></td>
+					</tr>
+					<tr>
+						<td scope="row">Spirantes</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="bilabial" data-voix="vois">β̞</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="lab-dent" data-voix="vois">ʋ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td> 
+						<td><span class="API" data-mode="spir" data-point="dental" data-voix="vois">ð̞</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="alveol" data-voix="vois">ɹ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="retro" data-voix="vois">ɻ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="palatal" data-voix="vois">j</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="labio-pal" data-voix="vois">ɥ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir" data-point="velaire" data-voix="vois">ɰ</span></td>
+						<td><span class="API" data-mode="spir" data-point="labio-pal" data-voix="non-vois">ʍ</span></td>
+						<td><span class="API" data-mode="spir" data-point="labio-pal" data-voix="vois">w</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td scope="row">Roulées</td>
+						<td><span class="API" data-mode="roulees" data-point="bilabial" data-voix="non-vois">ʙ̥</span></td>
+						<td><span class="API" data-mode="roulees" data-point="bilabial" data-voix="vois">ʙ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="roulees" data-point="dental" data-voix="vois">r̪</span></td>
+						<td><span class="API" data-mode="roulees" data-point="alveol" data-voix="non-vois">r̥</span></td>
+						<td><span class="API" data-mode="roulees" data-point="alveol" data-voix="vois">r</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="roulees" data-point="retro" data-voix="vois">ɽ͡r</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="4" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="roulees" data-point="uvulaire" data-voix="vois">ʀ</span></td>
+						<td colspan="2" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td colspan="2" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Battues</td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues" data-point="lab-dent" data-voix="vois">ⱱ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues" data-point="ling-lab" data-voix="vois">ɾ̼</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues" data-point="dental" data-voix="vois">ɾ̪</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues" data-point="alveol" data-voix="vois">ɾ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues" data-point="retro" data-voix="vois">ɽ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="4" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="2" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td colspan="2" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Affriquées latér.</td>
+						<td colspan="6" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="aff-lat" data-point="alveol" data-voix="non-vois">t͡ɬ</span></td>
+						<td><span class="API" data-mode="aff-lat" data-point="alveol" data-voix="vois">d͡ɮ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Fricatives latér.</td>
+						<td colspan="6" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-lat" data-point="alveol" data-voix="non-vois">ɬ</span></td>
+						<td><span class="API" data-mode="fric-lat" data-point="alveol" data-voix="vois">ɮ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-lat" data-point="retro" data-voix="non-vois">ꞎ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-lat" data-point="palatal" data-voix="non-vois">ʎ̝̊</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Spirantes latér.</td>
+						<td colspan="6" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir-lat" data-point="dental" data-voix="vois">l̪</span></td>
+						<td><span class="API" data-mode="spir-lat" data-point="alveol" data-voix="non-vois">l̥</span></td>
+						<td><span class="API" data-mode="spir-lat" data-point="alveol" data-voix="vois">l</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir-lat" data-point="retro" data-voix="vois">ɭ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir-lat" data-point="alv-vel" data-voix="vois">ɫ</span></td>
+						<td><span class="API" data-mode="spir-lat" data-point="palatal" data-voix="non-vois">ʎ̥</span></td>
+						<td><span class="API" data-mode="spir-lat" data-point="palatal" data-voix="vois">ʎ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="spir-lat" data-point="velaire" data-voix="vois">ʟ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Battues latér.</td>
+						<td colspan="6" class="impossible"></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues-lat" data-point="ling-lab" data-voix="vois">ɺ̼</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="battues-lat" data-point="alveol" data-voix="vois">ɺ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="col"><u><b>Non pulmoniques</b></u></td>
+						<td colspan="31">&nbsp;</td>
+					</tr>
+					<tr>
+						<td scope="row">Occl. injectives</td>
+						<td><span class="API" data-mode="occl-inj" data-point="bilabial" data-voix="non-vois">ɓ̥</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="bilabial" data-voix="vois">ɓ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-inj" data-point="lab-vel" data-voix="non-vois">ɠ̊͡ɓ̥</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="lab-vel" data-voix="vois">ɠ͡ɓ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-inj" data-point="dental" data-voix="vois">ɗ̪</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="alveol" data-voix="non-vois">ɗ̥</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="alveol" data-voix="vois">ɗ</span></td>
+						<td>&nbsp;</td>
+						<td>*</td>
+						<td>*</td>
+						<td>*</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-inj" data-point="palatal" data-voix="non-vois">ʄ̊</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="palatal" data-voix="vois">ʄ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-inj" data-point="velaire" data-voix="non-vois">ɠ̊</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="velaire" data-voix="vois">ɠ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-inj" data-point="uvulaire" data-voix="non-vois">ʛ̥</span></td>
+						<td><span class="API" data-mode="occl-inj" data-point="uvulaire" data-voix="vois">ʛ</span></td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Occl. éjectives</td>
+						<td><span class="API" data-mode="occl-ej" data-point="bilabial" data-voix="non-vois">pʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="dental" data-voix="non-vois">t̪ʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="alveol" data-voix="non-vois">tʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="retro" data-voix="non-vois">ʈʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="palatal" data-voix="non-vois">cʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="velaire" data-voix="non-vois">kʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="occl-ej" data-point="uvulaire" data-voix="non-vois">qʼ</span></td>
+						<td>&nbsp;</td>
+						<td colspan="2" class="impossible"></td>
+						<td><span class="API" data-mode="occl-ej" data-point="epiglottal" data-voix="non-vois">ʡʼ</span></td>
+						<td>&nbsp;</td>
+						<td colspan="2" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Affr. éjectives</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="dental" data-voix="non-vois">t̪͡θʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="alveol" data-voix="non-vois">t͡sʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="pal-alv" data-voix="non-vois">t͡ʃʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="retro" data-voix="non-vois">ʈ͡ʂʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="velaire" data-voix="non-vois">k͡xʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="affr-ej" data-point="uvulaire" data-voix="non-vois">q͡χʼ</span></td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Fric. éjectives</td>
+						<td><span class="API" data-mode="fric-ej" data-point="bilabial" data-voix="non-vois">ɸʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="lab-dent" data-voix="non-vois">fʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="dental" data-voix="non-vois">θʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="alveol">sʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="pal-alv" data-voix="non-vois">ʃʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="retro" data-voix="non-vois">ʂʼ</span></td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="alv-pal" data-voix="non-vois">ɕʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="palatal" data-voix="non-vois">çʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="velaire" data-voix="non-vois">xʼ</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><span class="API" data-mode="fric-ej" data-point="uvulaire" data-voix="non-vois">χʼ</span></td>
+						<td>&nbsp;</td>
+						<td colspan="6" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Clics centraux</td>
+						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="bilabial" >ʘ</span></td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="dental" >ǀ</span></td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="pal-alv">ǃ</span></td>
+						<td colspan="2">*</td>
+						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="alv-pal" >ǂ</span></td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="12" class="impossible"></td>
+					</tr>
+					<tr>
+						<td scope="row">Clics latéraux</td>
+						<td colspan="8" class="impossible"></td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2"><span class="API" data-mode="clic-lat" data-point="alveol">ǁ</span></td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="12" class="impossible"></td>
+					</tr>
+				</tbody>				
 			</table>
+
+			<div class="caption">
+				Source : <a href="https://fr.wikipedia.org/wiki/Alphabet_phon%C3%A9tique_international#Consonnes">Wikipedia</a> <br>
+				Les parties grisées indiquent une articulation jugée impossible. <br>
+				Les cases marquées d'un astérisque indiquent des sons attestés encore non représentés officiellement dans l'API.<br>
+			</div> 
+
+			<div id="vowels">
+				<h2>Voyelles</h2>
+				<table class="voyelles">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Antérieures</th>
+							<th>Mi-antérieures</th>
+							<th>Centrales</th>
+							<th>Mi-postérieures</th>
+							<th>Postérieures</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Fermées</th>
+							<td><span class='unrounded' title="LATIN SMALL LETTER I">i</span> <span class='rounded' title="U+0079: LATIN SMALL LETTER Y">y</span></td>
+							<td></td>
+							<td><span class='unrounded' title="U+0268: LATIN SMALL LETTER I WITH STROKE">ɨ</span> <span class='rounded' title="U+0289: LATIN SMALL LETTER U BAR">ʉ</span></td>
+							<td></td>
+							<td><span class='unrounded' title="U+026F: LATIN SMALL LETTER TURNED M">ɯ</span> <span class='rounded' title="U+0075: LATIN SMALL LETTER U">u</span></td>
+						</tr>
+						<tr>
+							<th>Pré-fermées</th>
+							<td></td>
+							<td><span class='unrounded' title="U+026A: LATIN LETTER SMALL CAPITAL I">ɪ</span> <span class='rounded' title="U+028F: LATIN LETTER SMALL CAPITAL Y">ʏ</span></td>
+							<td></td>
+							<td><span class='rounded' title="U+028A: LATIN SMALL LETTER UPSILON">ʊ</span></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Mi-fermées</th>
+							<td><span class='unrounded' title="U+0065: LATIN SMALL LETTER E">e</span> <span class='rounded' title="U+00F8: LATIN SMALL LETTER O WITH STROKE">ø</span></td>
+							<td></td>
+							<td><span class='unrounded' title="U+0258: LATIN SMALL LETTER REVERSED E">ɘ</span> <span class='rounded' title="U+0275: LATIN SMALL LETTER BARRED O">ɵ</span></td>
+							<td></td>
+							<td><span class='unrounded' title="U+0264: LATIN SMALL LETTER RAMS HORN">ɤ</span> <span class='rounded' title="U+006F: LATIN SMALL LETTER O">o</span></td>
+						</tr>
+						<tr>
+							<th>Moyennes</th>
+							<td></td>
+							<td></td>
+							<td><span class='unrounded' title="U+0259: LATIN SMALL LETTER SCHWA">ə</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Mi-ouvertes</th>
+							<td><span class='unrounded' title="U+025B: LATIN SMALL LETTER OPEN E">ɛ</span> <span class='rounded' title="U+0153: LATIN SMALL LIGATURE OE">œ</span></td>
+							<td></td>
+							<td><span class='unrounded' title="U+025C: LATIN SMALL LETTER REVERSED OPEN E">ɜ</span> <span class='rounded' title="U+025E: LATIN SMALL LETTER CLOSED REVERSED OPEN E">ɞ</span></td>
+							<td></td>
+							<td><span class='rounded' title="U+028C: LATIN SMALL LETTER TURNED V">ʌ</span> <span class='rounded' title="U+0254: LATIN SMALL LETTER OPEN O">ɔ</span></td>
+						</tr>
+						<tr>
+							<th>Pré-ouvertes</th>
+							<td><span class='unrounded' title="U+00E6: LATIN SMALL LETTER AE">æ</span></td>
+							<td></td>
+							<td><span title="U+0250: LATIN SMALL LETTER TURNED A">ɐ</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Ouvertes</th>
+							<td><span class='unrounded' title="U+0061: LATIN SMALL LETTER A">a</span> <span class='rounded' title="U+0276: LATIN LETTER SMALL CAPITAL OE">ɶ</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><span class='unrounded' title="U+0251: LATIN SMALL LETTER ALPHA">ɑ</span> <span class='rounded' title="U+0252: LATIN SMALL LETTER TURNED ALPHA">ɒ</span></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
+		</p>
+
+		<footer>XXX</footer>
 		
-		</div>
+		<script src="js/script.js"></script>
 
-            </p>
-
-            <footer>XXX</footer>
-			
-			<script src="js/script.js"></script>
-
-        </body>
-    </html>
+	</body>
+</html>
