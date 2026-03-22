@@ -1,5 +1,5 @@
 h1{
-    font-family: Baskerville Old Face;
+    font-family: Bahnschrift;
     font-size: 35px;
     font-style: normal;
     font-variant: normal;
@@ -10,7 +10,7 @@ h1{
     border-bottom: solid 1px grey;
     color:black;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     margin:0%;
 }
 
@@ -27,31 +27,36 @@ h2{
 
 body{
     background-color: #F5EFE9;
-    font-family: Baskerville Old Face;
+    font-family: Segoe UI;
+}
+
+p{
+    margin-left: 30px;
+    font-weight: 400;
 }
 
 #langue-select {
-    font-family: Baskerville Old Face;
+    margin-top: 30px;
+    font-family:Segoe UI;
     font-size:15px;
+}
+
+label{
+    font-size:18px;
 }
 
 .button{
-    font-family: Baskerville Old Face;
+    font-family: Segoe UI;
     font-size:15px;
 }
 
-table, th,td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    padding:5px;
-}
-
 footer{
-    border-top: 2px solid goldenrod;
-    background-color: rgba(108, 108, 194, 0.756);
+    border-top: 2px solid rgba(163, 122, 19, 0.749);
+    background-color: rgba(214, 211, 199, 0.756);
     text-align: center;
     padding: 5px;
     position: relative;
     font-size: 14px;
+    margin-top: 60px;
+    font-family: Segoe UI;
 }
