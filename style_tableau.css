@@ -17,7 +17,101 @@ table {
     margin: 0.5em auto;
     border: 2px solid rgba(0, 0, 0, 0.227);
     border-collapse: collapse; 
+    width: 90%;/* =========================================
+   Typographie Phonétique et Utilitaires
+   ========================================= */
+.API {
+    font-family: 'DejaVu Sans', 'Doulos SIL', 'Lucida Grande', 'Segoe UI', 'Arial Unicode MS', 'Adobe Pi Std', 'Lucida Sans Unicode', 'Chrysanthi Unicode', Code2000, Gentium, GentiumAlt, 'TITUS Cyberbit Basic', 'Bitstream Vera Sans', 'Bitstream Cyberbit', 'Hiragino Kaku Gothic Pro', 'Matrix Unicode', sans-serif;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* Style Global des Tableaux */
+   
+table {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0.5em auto;
+    border: 2px solid rgba(0, 0, 0, 0.227);
+    border-collapse: collapse; 
     width: 90%;
+    text-align: center;
+    background-color: rgba(249, 249, 247, 0.747)
+}
+
+div.voyelle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:30px;
+}
+
+.voyelles {
+    width: 50%;
+    font-size: 25px;
+}
+
+.diphtongue {
+    width: 8%;
+    margin-left: 30px;
+}
+
+.ton {
+    width:auto;
+}
+
+.module {
+    width:30%;
+    margin-left: 30px;
+}
+
+.niveau {
+    width:30%;
+    margin-left: 30px;
+}
+
+/* =========================================
+   Lignes et Alignements
+   ========================================= */
+tr {
+    font-size: 13px;
+}
+
+/* Alignement en bas pour les lignes d'en-tête spécifiques (Modes et Pulmoniques) */
+tr:nth-child(1), 
+tr:nth-child(3), 
+tr:nth-last-child(2) {
+    vertical-align: bottom;
+}
+
+/* =========================================
+   Cellules (td, th) et Bordures Standard
+   ========================================= */
+td, th {
+    padding: 1px 2px;
+    /* Applique une grille de base par défaut à toutes les cellules */
+    border-top: thin solid rgba(0, 0, 0, 0.319);
+    border-left: thin solid rgba(0, 0, 0, 0.319);
+}
+
+/* Suppression des bordures pour les cellules directrices (Mode/Point d'articulation) */
+td[scope="col"], 
+td[scope="row"] {
+    border: 1px solid rgb(0, 0, 0, 0.319);
+}
+
+/* Restauration ciblée pour la deuxième ligne d'en-tête (Labial, Coronal...) */
+tr:nth-child(2) td {
+    border-top: thin solid rgba(0, 0, 0, 0.319);
+    border-right: none;
+}
+
+
+.impossible {
+    background-color: #cdced0;
+}
     text-align: center;
     background-color: rgba(249, 249, 247, 0.747)
 }
