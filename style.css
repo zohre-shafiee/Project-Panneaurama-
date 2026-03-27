@@ -1,80 +1,96 @@
-h1{
-    font-family: Bahnschrift;
-    font-size: 35px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 27.5px;
-    display: grid;
-    background-color: #F5EFE9;
-    border-bottom: solid 1px grey;
-    color:black;
-    text-align: center;
-    padding: 20px;
-    margin:0%;
+
+:root {
+    --couleur-fond: #F5EFE9;
+    --commun: #2ecc71;
+    --fr: #3498db;
+    --autre: #e67e22;
 }
 
-h2{
+
+/* ********** STYLES DE BASE ********** */
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--couleur-fond);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: Bahnschrift;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 27.5px;
+    background-color: var(--couleur-fond);
+    border-bottom: solid 1px grey;
+    padding: 20px;
+    margin: 0%;
+}
+
+h2 {
     font-family: Bahnschrift;
     font-size: 25px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 350;
     letter-spacing: -1px;
     margin-left: 30px;
     margin-top: 40px;
 }
 
-body{
-    background-color: #F5EFE9;
-    font-family: Segoe UI;
+h3 {
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: 350;
+    letter-spacing: -1px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
 
-p{
+p {
     margin-left: 30px;
     font-weight: 400;
 }
 
+label {
+    font-size: 18px;
+}
+
+
+
+/* ********** STRUCTURE DE LA PAGE ********** */
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.content-wrapper {
+    flex: 1 0 auto; 
+}
+
+
+
+/* ********** FORMULAIRE ET BOUTONS ********** */
+
+/* Menu déroulant */
 #langue-select {
     margin-top: 30px;
-    font-family:Segoe UI;
-    font-size:15px;
-}
-
-label{
-    font-size:18px;
-}
-
-.button{
     font-family: Segoe UI;
-    font-size:15px;
+    font-size: 15px;
 }
 
-footer{
-    border-top: 2px solid rgba(163, 122, 19, 0.749);
-    background-color: rgba(214, 211, 199, 0.756);
-    text-align: center;
-    padding: 5px;
-    position: relative;
-    font-size: 14px;
-    margin-top: 60px;
+.button {
     font-family: Segoe UI;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
-.phoneme-active {
-    background-color: #ffd54f;
-    border-radius: 4px;
-    padding: 2px 4px;
-    font-weight: bold;
-}
-
-.phoneme-active {
-    background-color: yellow;
-    border: 2px solid red;
-    border-radius: 4px;
-    padding: 2px 4px;
-}
-
+/* ********** ZONE DE DESCRIPTION ********** */
 #description-phonologique {
     margin: 20px 30px;
     padding: 15px;
@@ -83,4 +99,21 @@ footer{
     border-radius: 8px;
     line-height: 1.6;
     white-space: pre-line;
+    font-style: italic;
+    min-height: 50px;
 }
+
+
+/* ********** PIED DE PAGE ********** */
+footer {
+    flex-shrink: 0;
+    border-top: 2px solid rgba(163, 122, 19, 0.749);
+    background-color: rgba(214, 211, 199, 0.756);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+
+
