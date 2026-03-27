@@ -1,900 +1,920 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>PanneauxRama</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="style_tableau.css" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
+	<body class="site-container">
+		<head>
+			<title>PanneauxRama</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="style_tableau.css" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
+		</head>
 
-	<body>
+		<main class="content-wrapper">
+			<header>
+				<h1>PanneauxRama</h1>
+			</header>
 
-		<header>
-			<h1>Projet PanneauxRama</h1>
-		</header>
+			<p>
+				<label for="langue-select">Choisissez une langue :</label>
 
-		<p>
-			<label for="langue-select">Choisissez une langue :</label>
+				<select id="langue-select">
+					<option value="">-- Sélectionner une langue --</option>
+				</select>
 
-			<select id="langue-select">
-				<option value="">-- Sélectionner une langue --</option>
-			</select>
-
-			<input type="button" value="Valider" id="btn-valider" class="button">
-			<input type="button" value="Réinitialiser" id="btn-reset" class="button">
-			
-       		
-			
-		</p>
-
-			<h2>Consonnes</h2>
-			<table border="0" cellspacing="0" class="consonne">
-				<tbody>
-					<tr>
-						<td scope="col" rowspan="2">Mode d’articulation</td>
-						<td scope="col" colspan="34">Point d’articulation</td>
-
-					</tr>
-					<tr>
-						<td scope="col" colspan="8">Labial</td>
-						<td scope="col" colspan="12">Coronal</td>
-						<td scope="col" colspan="10">Dorsal</td>
-						<td scope="col" colspan="4">Radical</td>
-						<td scope="col" colspan="2">Glottal</td>
-					</tr>
-					<tr>
-						<td scope="col"><u><b>Pulmoniques</b></u></td>
-						<td scope="col" colspan="2">Bilabial</td>
-						<td scope="col" colspan="2">Lab.-dent.</td>
-						<td scope="col" colspan="2">Labial-vél.</td>
-						<td scope="col" colspan="2">Ling.-lab.</td>
-						<td scope="col" colspan="2">Dental</td>
-						<td scope="col" colspan="2">Alvéol.</td>
-						<td scope="col" colspan="2">Pal.-alv.</td>
-						<td scope="col" colspan="2">Rétro.</td>
-						<td scope="col" colspan="2">Alv.-pal.</td>
-						<td scope="col" colspan="2">Alv.-vél.</td>
-						<td scope="col" colspan="2">Palatal</td>
-						<td scope="col" colspan="2">Labio-pal.</td>
-						<td scope="col" colspan="2">Vélaire</td>
-						<td scope="col" colspan="2">Labio-vél.</td>
-						<td scope="col" colspan="2">Uvulaire</td>
-						<td scope="col" colspan="2">Pharyngal</td>
-						<td scope="col" colspan="2">Épiglottal</td>
-						<td scope="col" colspan="2">Aucun</td>
-					</tr>
-					<tr>
-						<td scope="row">Nasales</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="bilabiale" data-voix="voisée">m</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="labio-dentale" data-voix="voisée">ɱ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="lab-vel" data-voix="voisée">ŋ͡m</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="ling-lab" data-voix="voisée">n̼</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="dental" data-voix="voisée">n̪</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="alvéolaire" data-voix="voisée">n</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="rétroflexe" data-voix="voisée">ɳ</span></td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="palatale" data-voix="voisée">ɲ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="vélaire" data-voix="voisée">ŋ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasale" data-point="labio-vel" data-voix="voisée">ŋʷ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="nasal" data-point="uvulaire" data-voix="voisée">ɴ</span></td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Occl. prénasalisées</td>
-						<td><span class="API nowrap"  data-mode="occl-prenas" data-point="bilabial" data-voix="sourde">m͡p</span></td>
-						<td><span  class="API" data-mode="occl-prenas" data-point="bilabiale" data-voix="voisée">m͡b</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="lab-vel" data-voix="sourde">ᵑk͡p</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="lab-vel" data-voix="voisée">ᵑɡ͡b</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-prenas" data-point="ling-lab" data-voix="voisée">n̼͡d̼</span></td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="dental" data-voix="sourde">n͡t̪</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="dental" data-voix="voisée">n͡d̪</span></td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="alvéolaire" data-voix="sourde">n͡t</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="alvéolaire" data-voix="voisée">n͡d</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="rétroflexe" data-voix="sourde">ɳ͡ʈ</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="rétroflexe" data-voix="voisée">ɳ͡ɖ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="palatale" data-voix="sourde">ɲ͡c</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="palatale" data-voix="voisée">ɲ͡ɟ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="vélaire" data-voix="sourde">ŋ͡k</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="vélaire" data-voix="voisée">ŋ͡ɡ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="occl-prenas" data-point="uvulaire" data-voix="sourde">ɴ͡q</span></td>
-						<td><span class="API" data-mode="occl-prenas" data-point="uvulaire" data-voix="voisée">ɴ͡ɢ</span></td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Occlusives</td>
-						<td><span class="API" data-mode="occlusive" data-point="bilabiale" data-voix="sourde">p</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="bilabiale" data-voix="voisée">b</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="labio-dentale" data-voix="sourde">p̪</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="labio-dentale" data-voix="voisée">b̪</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="lab-vel" data-voix="sourde">k͡p</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="lab-vel" data-voix="voisée">ɡ͡b</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="ling-lab" data-voix="sourde">t̼</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="ling-lab" data-voix="voisée">d̼</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="dental" data-voix="sourde">t̪</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="dental" data-voix="voisée">d̪</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="alvéolaire" data-voix="sourde">t</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="alvéolaire" data-voix="voisée">d</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occlusive" data-point="rétroflexe" data-voix="sourde">ʈ</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="rétroflexe" data-voix="voisée">ɖ</span></td>
-						<td>*</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occlusive" data-point="palatale" data-voix="sourde">c</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="palatale" data-voix="voisée">ɟ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occlusive" data-point="vélaire" data-voix="sourde">k</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="vélaire" data-voix="voisée">ɡ</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="labio-vel" data-voix="sourde">kʷ</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="labio-vel" data-voix="voisée">ɡʷ</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="uvulaire" data-voix="sourde">q</span></td>
-						<td><span class="API" data-mode="occlusive" data-point="uvulaire" data-voix="voisée">ɢ</span></td>
-						<td colspan="2" class="impossible"></td>
-						<td><span class="API" data-mode="occlusive" data-point="epiglottal">ʡ</span></td>
-						<td class="impossible"></td>
-						<td><span class="API" data-mode="occlusive" data-point="glottale">ʔ</span></td>
-						<td class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Affriquées</td>
-						<td><span class="API nowrap" data-mode="affr" data-point="bilabiale" data-voix="sourde">p͡ɸ</span></td>
-						<td><span class="API nowrap" data-mode="affr" data-point="bilabiale" data-voix="voisée">b͡β</span></td>
-						<td><span class="API" data-mode="affr" data-point="labio-dentale" data-voix="sourde">p͡f</span></td>
-						<td><span class="API" data-mode="affr" data-point="labio-dentale" data-voix="voisée">b͡v</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr" data-point="dental" data-voix="sourde">t͡θ</span></td>
-						<td><span class="API nowrap" data-mode="affr" data-point="dental" data-voix="voisée">d͡ð</span></td>
-						<td><span class="API" data-mode="affr" data-point="alvéolaire" data-voix="sourde">t͡s</span></td>
-						<td><span class="API" data-mode="affr" data-point="alvéolaire" data-voix="voisée">d͡z</span></td>
-						<td><span class="API" data-mode="affr" data-point="post-alvéolaire" data-voix="sourde">t͡ʃ</span></td>
-						<td><span class="API" data-mode="affr" data-point="post-alvéolaire" data-voix="voisée">d͡ʒ</span></td>
-						<td><span class="API" data-mode="affr" data-point="rétroflexe" data-voix="sourde">ʈ͡ʂ</span></td>
-						<td><span class="API" data-mode="affr" data-point="rétroflexe" data-voix="voisée">ɖ͡ʐ</span></td>
-						<td><span class="API" data-mode="affr" data-point="alv-pal" data-voix="sourde">t͡ɕ</span></td>
-						<td><span class="API" data-mode="affr" data-point="alv-pal" data-voix="voisée">d͡ʑ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="affr" data-point="palatale" data-voix="sourde">c͡ç</span></td>
-						<td><span class="API nowrap" data-mode="affr" data-point="palatale" data-voix="voisée">ɟ͡ʝ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr" data-point="vélaire" data-voix="sourde">k͡x</span></td>
-						<td><span class="API" data-mode="affr" data-point="vélaire" data-voix="voisée">ɡ͡ɣ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="affr" data-point="uvulaire" data-voix="sourde">q͡χ</span></td>
-						<td><span class="API" data-mode="affr" data-point="uvulaire" data-voix="voisée">ɢ͡ʁ</span></td>
-						<td colspan="2" class="impossible"></td>
-						<td><span class="API" data-mode="affr" data-point="epiglottal">ʡ͡ʜ</span></td>
-						<td class="impossible"></td>
-						<td><span class="API" data-mode="affr" data-point="glottale">ʔ͡h</span></td>
-						<td class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Fric. prénasalisées</td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="bilabiale" data-voix="sourde">m͡ɸ</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="bilabiale" data-voix="voisée">m͡β</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="labio-dentale" data-voix="sourde">ɱ͡f</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="labio-dentale" data-voix="voisée">ɱ͡v</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="dental" data-voix="sourde">n͡θ</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="dental" data-voix="voisée">n͡ð</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="alvéolaire" data-voix="sourde">n͡s</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="alvéolaire" data-voix="voisée">n͡z</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="post-alvéolaire" data-voix="sourde">n͡ʃ</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="post-alvéolaire" data-voix="voisée">n͡ʒ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="vélaire" data-voix="sourde">ŋ͡k</span></td>
-						<td><span class="API nowrap" data-mode="fric-prenas" data-point="vélaire" data-voix="voisée">ŋ͡ɡ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Fricatives</td>
-						<td><span class="API" data-mode="fricative" data-point="bilabiale" data-voix="sourde">ɸ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="bilabiale" data-voix="voisée">β</span></td>
-						<td><span class="API" data-mode="fricative" data-point="labio-dentale" data-voix="sourde">f</span></td>
-						<td><span class="API" data-mode="fricative" data-point="labio-dentale" data-voix="voisée">v</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative" data-point="ling-lab" data-voix="sourde">θ̼</span></td>
-						<td><span class="API" data-mode="fricative" data-point="ling-lab" data-voix="voisée">ð̼</span></td>
-						<td><span class="API" data-mode="fricative" data-point="dental" data-voix="sourde">θ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="dental" data-voix="voisée">ð</span></td>
-						<td><span class="API" data-mode="fricative" data-point="alvéolaire" data-voix="sourde">s</span></td>
-						<td><span class="API" data-mode="fricative" data-point="alvéolaire" data-voix="voisée">z</span></td>
-						<td><span class="API" data-mode="fricative" data-point="post-alvéolaire" data-voix="sourde">ʃ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="post-alvéolaire" data-voix="voisée">ʒ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="rétroflexe" data-voix="sourde">ʂ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="rétroflexe" data-voix="voisée">ʐ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="alv-pal" data-voix="sourde">ɕ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="alv-pal" data-voix="voisée">ʑ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="alv-vel" data-voix="sourde">ɧ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative" data-point="palatale" data-voix="sourde">ç</span></td>
-						<td><span class="API" data-mode="fricative" data-point="palatale" data-voix="voisée">ʝ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative" data-point="vélaire" data-voix="sourde">x</span></td>
-						<td><span class="API" data-mode="fricative" data-point="vélaire" data-voix="voisée">ɣ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="labio-vel" data-voix="sourde">xʷ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="labio-vel" data-voix="voisée">ɣʷ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="uvulaire" data-voix="sourde">χ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="uvulaire" data-voix="voisée">ʁ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="pharyngale" data-voix="sourde">ħ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="pharyngale" data-voix="voisée">ʕ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="epiglottal" data-voix="sourde">ʜ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="epiglottal" data-voix="voisée">ʢ</span></td>
-						<td><span class="API" data-mode="fricative" data-point="glottale" data-voix="sourde">h</span></td>
-						<td><span class="API" data-mode="fricative" data-point="glottale" data-voix="voisée">ɦ</span></td>
-					</tr>
-					<tr>
-						<td scope="row">Spirantes</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="bilabiale" data-voix="voisée">β̞</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="labio-dentale" data-voix="voisée">ʋ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td> 
-						<td><span class="API" data-mode="spirante" data-point="dental" data-voix="voisée">ð̞</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="alvéolaire" data-voix="voisée">ɹ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="rétroflexe" data-voix="voisée">ɻ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="palatale" data-voix="voisée">j</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="labio-pal" data-voix="voisée">ɥ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spirante" data-point="vélaire" data-voix="voisée">ɰ</span></td>
-						<td><span class="API" data-mode="spirante" data-point="labio-pal" data-voix="sourde">ʍ</span></td>
-						<td><span class="API" data-mode="spirante" data-point="labio-pal" data-voix="voisée">w</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td scope="row">Roulées</td>
-						<td><span class="API" data-mode="roulée" data-point="bilabiale" data-voix="sourde">ʙ̥</span></td>
-						<td><span class="API" data-mode="roulée" data-point="bilabiale" data-voix="voisée">ʙ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="roulée" data-point="dental" data-voix="voisée">r̪</span></td>
-						<td><span class="API" data-mode="roulée" data-point="alvéolaire" data-voix="sourde">r̥</span></td>
-						<td><span class="API" data-mode="roulée" data-point="alvéolaire" data-voix="voisée">r</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="roulée" data-point="rétroflexe" data-voix="voisée">ɽ͡r</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="4" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="roulée" data-point="uvulaire" data-voix="voisée">ʀ</span></td>
-						<td colspan="2" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td colspan="2" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Battues</td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battue" data-point="labio-dentale" data-voix="voisée">ⱱ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battue" data-point="ling-lab" data-voix="voisée">ɾ̼</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battue" data-point="dental" data-voix="voisée">ɾ̪</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battue" data-point="alvéolaire" data-voix="voisée">ɾ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battue" data-point="rétroflexe" data-voix="voisée">ɽ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="4" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="2" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td colspan="2" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Affriquées latér.</td>
-						<td colspan="6" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="aff-lat" data-point="alvéolaire" data-voix="sourde">t͡ɬ</span></td>
-						<td><span class="API" data-mode="aff-lat" data-point="alvéolaire" data-voix="voisée">d͡ɮ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Fricatives latér.</td>
-						<td colspan="6" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative latérale" data-point="alvéolaire" data-voix="sourde">ɬ</span></td>
-						<td><span class="API" data-mode="fricative latérale" data-point="alvéolaire" data-voix="voisée">ɮ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative latérale" data-point="rétroflexe" data-voix="sourde">ꞎ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fricative latérale" data-point="palatale" data-voix="sourde">ʎ̝̊</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Spirantes latér.</td>
-						<td colspan="6" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spir-lat" data-point="dental" data-voix="voisée">l̪</span></td>
-						<td><span class="API" data-mode="spir-lat" data-point="alvéolaire" data-voix="sourde">l̥</span></td>
-						<td><span class="API" data-mode="spir-lat" data-point="alvéolaire" data-voix="voisée">l</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spir-lat" data-point="rétroflexe" data-voix="voisée">ɭ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spir-lat" data-point="alv-vel" data-voix="voisée">ɫ</span></td>
-						<td><span class="API" data-mode="spir-lat" data-point="palatale" data-voix="sourde">ʎ̥</span></td>
-						<td><span class="API" data-mode="spir-lat" data-point="palatale" data-voix="voisée">ʎ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="spir-lat" data-point="vélaire" data-voix="voisée">ʟ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Battues latér.</td>
-						<td colspan="6" class="impossible"></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battues-lat" data-point="ling-lab" data-voix="voisée">ɺ̼</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="battues-lat" data-point="alvéolaire" data-voix="voisée">ɺ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="col"><u><b>Non pulmoniques</b></u></td>
-						<td colspan="31">&nbsp;</td>
-					</tr>
-					<tr>
-						<td scope="row">Occl. injectives</td>
-						<td><span class="API" data-mode="occl-inj" data-point="bilabiale" data-voix="sourde">ɓ̥</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="bilabiale" data-voix="voisée">ɓ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-inj" data-point="lab-vel" data-voix="sourde">ɠ̊͡ɓ̥</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="lab-vel" data-voix="voisée">ɠ͡ɓ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-inj" data-point="dental" data-voix="voisée">ɗ̪</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="alvéolaire" data-voix="sourde">ɗ̥</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="alvéolaire" data-voix="voisée">ɗ</span></td>
-						<td>&nbsp;</td>
-						<td>*</td>
-						<td>*</td>
-						<td>*</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-inj" data-point="palatale" data-voix="sourde">ʄ̊</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="palatale" data-voix="voisée">ʄ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-inj" data-point="vélaire" data-voix="sourde">ɠ̊</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="vélaire" data-voix="voisée">ɠ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-inj" data-point="uvulaire" data-voix="sourde">ʛ̥</span></td>
-						<td><span class="API" data-mode="occl-inj" data-point="uvulaire" data-voix="voisée">ʛ</span></td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Occl. éjectives</td>
-						<td><span class="API" data-mode="occl-ej" data-point="bilabiale" data-voix="sourde">pʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="dental" data-voix="sourde">t̪ʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="alvéolaire" data-voix="sourde">tʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="rétroflexe" data-voix="sourde">ʈʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="palatale" data-voix="sourde">cʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="vélaire" data-voix="sourde">kʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="occl-ej" data-point="uvulaire" data-voix="sourde">qʼ</span></td>
-						<td>&nbsp;</td>
-						<td colspan="2" class="impossible"></td>
-						<td><span class="API" data-mode="occl-ej" data-point="epiglottal" data-voix="sourde">ʡʼ</span></td>
-						<td>&nbsp;</td>
-						<td colspan="2" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Affr. éjectives</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="dental" data-voix="sourde">t̪͡θʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="alvéolaire" data-voix="sourde">t͡sʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="post-alvéolaire" data-voix="sourde">t͡ʃʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="rétroflexe" data-voix="sourde">ʈ͡ʂʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="vélaire" data-voix="sourde">k͡xʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="affr-ej" data-point="uvulaire" data-voix="sourde">q͡χʼ</span></td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Fric. éjectives</td>
-						<td><span class="API" data-mode="fric-ej" data-point="bilabiale" data-voix="sourde">ɸʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="labio-dentale" data-voix="sourde">fʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="dental" data-voix="sourde">θʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="alvéolaire">sʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="post-alvéolaire" data-voix="sourde">ʃʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="rétroflexe" data-voix="sourde">ʂʼ</span></td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="alv-pal" data-voix="sourde">ɕʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="palatale" data-voix="sourde">çʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="vélaire" data-voix="sourde">xʼ</span></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td><span class="API" data-mode="fric-ej" data-point="uvulaire" data-voix="sourde">χʼ</span></td>
-						<td>&nbsp;</td>
-						<td colspan="6" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Clics centraux</td>
-						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="bilabiale" >ʘ</span></td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="dental" >ǀ</span></td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="post-alvéolaire">ǃ</span></td>
-						<td colspan="2">*</td>
-						<td colspan="2"><span class="API" data-mode="clic-centr" data-point="alv-pal" >ǂ</span></td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="12" class="impossible"></td>
-					</tr>
-					<tr>
-						<td scope="row">Clics latéraux</td>
-						<td colspan="8" class="impossible"></td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2"><span class="API" data-mode="clic-lat" data-point="alvéolaire">ǁ</span></td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="2">&nbsp;</td>
-						<td colspan="12" class="impossible"></td>
-					</tr>
-				</tbody>				
-			</table>
-
-			<p class="caption">
-				Source : <a href="https://fr.wikipedia.org/wiki/Alphabet_phon%C3%A9tique_international#Consonnes">Wikipedia</a> <br>
-				Les parties grisées indiquent une articulation jugée impossible. <br>
-				Les cases marquées d'un astérisque indiquent des sons attestés encore non représentés officiellement dans l'API.<br>
-			</p> 
-
-			<h2>Voyelles</h2>
-
-			<div class ="voyelle-container">
+				<input type="button" value="Valider" id="btn-valider" class="button">
+				<input type="button" value="Réinitialiser" id="btn-reset" class="button">
 				
-				<table class="voyelle">
+			</p>
 
-					<tr>
-						<td></td>
-						<td scope="col" colspan="2">Antérieures</td>
-						<td scope="col" colspan="2">Mi-antérieures</td>
-						<td scope="col" colspan="3">Centrales</td>
-						<td scope="col" colspan="2">Mi-postérieures</td>
-						<td scope="col" colspan="2">Postérieures</td>	
-					</tr>	
+			<div id="zone-resultats" style="display: none;">
+				<h3>Légende</h3>
+				<p>	
+					Les points de couleur bleue indiquent que le son n'existe qu'en français <br>
+					Les points de couleur orange indiquent que le son n'existe que dans la langue sélectionnée<br>
+					Les points de couleur verte indiquent que le phonème est commun <br>
+				</p>
 
-					<tbody>
-						<tr>
-							<td>Fermées</td>
-							<td><span data-point="antérieure" data-aper="fermée" data-round="non-arrondie">i</span></td>
-							<td><span data-point="antérieure" data-aper="fermée" data-round='arrondie'>y</span></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="fermée" data-round='non-arrondie'>ɨ</span></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="fermée" data-round="arrondie">ʉ</span></td>														
-							<td></td>
-							<td></td>
-							<td><span data-point="postérieure" data-aper="fermée" data-round='non-arrondie'>ɯ</span></td>
-							<td><span data-point="postérieure" data-aper="fermée" data-round='arrondie'>u</span></td>						
-						</tr>
-						<tr>
-							<td>Pré-fermées</td>
-							<td></td>
-							<td></td>
-							<td><span data-point="quasi-antérieure" data-aper="pré-fermée" data-round='non-arrondie'>ɪ</span> </td>
-							<td><span data-point="quasi-antérieure" data-aper="pré-fermée" data-round='arrondie'>ʏ</span></td>	
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="quasi-postérieure" data-aper="pré-fermée" data-round='arrondie'>ʊ</span></td>													
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Mi-fermées</td>
-							<td><span data-point="antérieure" data-aper="mi-fermée" data-round='non-arrondie'>e</span></td> 
-							<td><span data-point="antérieure" data-aper="mi-fermée" data-round='arrondie'>ø</span></td>	
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="mi-fermée" data-round='non-arrondie'>ɘ</span> </td>
-							<td></td>							
-							<td><span data-point="centrale" data-aper="mi-fermée" data-round='arrondie'>ɵ</span></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="postérieure" data-aper="mi-fermée" data-round='non-arrondie'>ɤ</span> </td>
-							<td><span data-point="postérieure" data-aper="mi-fermée" data-round='arrondie'>o</span></td>							
-						</tr>
-						<tr>
-							<td>Moyennes</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="moyenne">ə</span></td>													
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Mi-ouvertes</td>
-							<td><span data-point="antérieure" data-aper="mi-ouverte" data-round='non-arrondie'>ɛ</span> </td>
-							<td><span data-point="antérieure" data-aper="mi-ouverte" data-round='arrondie'>œ</span></td>	
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="mi-ouverte" data-round='non-arrondie'>ɜ</span> </td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="mi-ouverte" data-round='arrondie'>ɞ</span></td>								
-							<td></td>
-							<td></td>
-							<td><span data-point="postérieure" data-aper="mi-ouverte" data-round='arrondie'>ʌ</span> </td>
-							<td><span data-point="postérieure" data-aper="mi-ouverte" data-round='arrondie'>ɔ</span></td>								
-						</tr>
-						<tr>
-							<td>Pré-ouvertes</td>
-							<td><span data-point="antérieure" data-aper="pré-ouverte" data-round='non-arrondie'>æ</span></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="pré-ouverte">ɐ</span></td>					
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Ouvertes</td>
-							<td><span data-point="antérieure" data-aper="ouverte" data-round='non-arrondie'>a</span> </td>
-							<td><span data-point="antérieure" data-aper="ouverte" data-round='arrondie'>ɶ</span></td>	
-							<td></td>
-							<td></td>
-							<td><span data-point="centrale" data-aper="ouverte">ä</span></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><span data-point="postérieure" data-aper="ouverte" data-round='non-arrondie'>ɑ</span> </td>
-							<td><span data-point="postérieure" data-aper="ouverte" data-round='arrondie'>ɒ</span></td>								
-						</tr>
-					</tbody>
-				</table>
+					<h2>Consonnes</h2>
+					<table border="0" cellspacing="0" class="consonne" id="consonnes">
+						<tbody>
+							<tr>
+								<th scope="col" rowspan="2">Mode d’articulation</th>
+								<th scope="col" colspan="34">Point d’articulation</th>
 
-				<table class="diphtongue">
-					<tr><td>Diphtongues</td></tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr><td>&nbsp;</td></tr>
-				</table>
+							</tr>
+							<tr>
+								<td scope="col" colspan="8">Labial</td>
+								<td scope="col" colspan="12">Coronal</td>
+								<td scope="col" colspan="10">Dorsal</td>
+								<td scope="col" colspan="4">Radical</td>
+								<td scope="col" colspan="2">Glottal</td>
+							</tr>
+							<tr>
+								<td scope="col"><u><b>Pulmoniques</b></u></td>
+								<td scope="col" colspan="2">Bilabial</td>
+								<td scope="col" colspan="2">Lab.-dent.</td>
+								<td scope="col" colspan="2">Labial-vél.</td>
+								<td scope="col" colspan="2">Ling.-lab.</td>
+								<td scope="col" colspan="2">Dental</td>
+								<td scope="col" colspan="2">Alvéol.</td>
+								<td scope="col" colspan="2">Pal.-alv.</td>
+								<td scope="col" colspan="2">Rétro.</td>
+								<td scope="col" colspan="2">Alv.-pal.</td>
+								<td scope="col" colspan="2">Alv.-vél.</td>
+								<td scope="col" colspan="2">Palatal</td>
+								<td scope="col" colspan="2">Labio-pal.</td>
+								<td scope="col" colspan="2">Vélaire</td>
+								<td scope="col" colspan="2">Labio-vél.</td>
+								<td scope="col" colspan="2">Uvulaire</td>
+								<td scope="col" colspan="2">Pharyngal</td>
+								<td scope="col" colspan="2">Épiglottal</td>
+								<td scope="col" colspan="2">Aucun</td>
+							</tr>
+							<tr data-mode="nasale">
+								<td scope="row">Nasales</td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="bilabiale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="lab-vel" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="ling-lab" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="labio-vel" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="nasale" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
 
-				<table class="ton">
-					<table class="niveau">
-						<tr>
-							<td colspan="3">Tons de niveau</td>
-						</tr>
-						<tr>
-							<td>Ton</td>
-							<td>Diacritique</td>
-							<td>Barre</td>
-						</tr>
-						<tr>
-							<td >Haut</td>
-							<td >e̋</td>
-							<td data-level="haut" data-contour="plat">e˥</td>
-						</tr>
-						<tr>
-							<td>Mi-haut</td>
-							<td>é</td>
-							<td data-level="haut" data-contour="plat">e˦</td>
-						</tr>
-						<tr>
-							<td>Médian</td>
-							<td>ē</td>
-							<td data-level="moyen" data-contour="plat">e˧</td>
-						</tr>
-						<tr>
-							<td>Mi-bas</td>
-							<td>è</td>
-							<td data-level="bas" data-contour="plat">e˨</td>
-						</tr>
-						<tr>
-							<td>Bas</td>
-							<td>ȅ</td>
-							<td data-level="bas" data-contour="plat">e˩</td>
-						</tr>
+							<tr data-mode="occl-prenas">
+								<td scope="row">Occl. prénasalisées</td>
+								<td data-mode="occl-prenas" data-point="bilabial" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="bilabiale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="lab-vel" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="lab-vel" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="ling-lab" data-voix="voisée"></td>
+								<td data-mode="occl-prenas" data-point="dentale" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="occl-prenas" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="rétroflexe" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-prenas" data-point="uvulaire" data-voix="sourde"></td>
+								<td data-mode="occl-prenas" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="occlusive">
+								<td scope="row">Occlusives</td>
+								<td data-mode="occlusive" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="bilabiale" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="labio-dentale" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="labio-dentale" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="lab-vel" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="lab-vel" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="ling-lab" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="ling-lab" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="dentale" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occlusive" data-point="rétroflexe" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>*</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occlusive" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occlusive" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="vélaire" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="labio-vel" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="labio-vel" data-voix="voisée"></td>
+								<td data-mode="occlusive" data-point="uvulaire" data-voix="sourde"></td>
+								<td data-mode="occlusive" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="2" class="impossible"></td>
+								<td data-mode="occlusive" data-point="epiglottal"></td>
+								<td class="impossible"></td>
+								<td data-mode="occlusive" data-point="glottale"></td>
+								<td class="impossible"></td>
+							</tr>
+							<tr data-mode="affr">
+								<td scope="row">Affriquées</td>
+								<td data-mode="affr" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="bilabiale" data-voix="voisée"></td>
+								<td data-mode="affr" data-point="labio-dentale" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr" data-point="dentale" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="affr" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="alvéolaire" data-voix="voisée"></td>
+								<td data-mode="affr" data-point="post-alvéolaire" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="post-alvéolaire" data-voix="voisée"></td>
+								<td data-mode="affr" data-point="rétroflexe" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="rétroflexe" data-voix="voisée"></td>
+								<td data-mode="affr" data-point="alv-pal" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="alv-pal" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr" data-point="uvulaire" data-voix="sourde"></td>
+								<td data-mode="affr" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="2" class="impossible"></td>
+								<td data-mode="affr" data-point="epiglottal"></td>
+								<td class="impossible"></td>
+								<td data-mode="affr" data-point="glottale"></td>
+								<td class="impossible"></td>
+							</tr>
+
+							<tr data-mode="fric-prenas">
+								<td scope="row">Fric. prénasalisées</td>
+								<td data-mode="fric-prenas" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="bilabiale" data-voix="voisée"></td>
+								<td data-mode="fric-prenas" data-point="labio-dentale" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-prenas" data-point="dentale" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="fric-prenas" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="alvéolaire" data-voix="voisée"></td>
+								<td data-mode="fric-prenas" data-point="post-alvéolaire" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="post-alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-prenas" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="fric-prenas" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="fricative">
+								<td scope="row">Fricatives</td>
+								<td data-mode="fricative" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="bilabiale" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="labio-dentale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative" data-point="ling-lab" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="ling-lab" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="dentale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="alvéolaire" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="post-alvéolaire" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="post-alvéolaire" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="rétroflexe" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="rétroflexe" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="alv-pal" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="alv-pal" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="alv-vel" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="vélaire" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="labio-vel" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="labio-vel" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="uvulaire" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="uvulaire" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="pharyngale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="pharyngale" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="epiglottal" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="epiglottal" data-voix="voisée"></td>
+								<td data-mode="fricative" data-point="glottale" data-voix="sourde"></td>
+								<td data-mode="fricative" data-point="glottale" data-voix="voisée"></td>
+							</tr>
+
+							<tr data-mode="spirante">
+								<td scope="row">Spirantes</td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="bilabiale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td> 
+								<td data-mode="spirante" data-point="dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="labio-pal" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="spirante" data-point="vélaire" data-voix="voisée"></td>
+								<td data-mode="spirante" data-point="labio-pal" data-voix="sourde"></td>
+								<td data-mode="spirante" data-point="labio-pal" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+
+							<tr data-mode="roulée">
+								<td scope="row">Roulées</td>
+								<td data-mode="roulée" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="roulée" data-point="bilabiale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="roulée" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="roulée" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="roulée" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="roulée" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="4" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td data-mode="roulée" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="2" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td colspan="2" class="impossible"></td>
+							</tr>
+							<tr data-mode="battue">
+								<td scope="row">Battues</td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td data-mode="battue" data-point="labio-dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="battue" data-point="ling-lab" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="battue" data-point="dentale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td data-mode="battue" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="battue" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="4" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="2" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td colspan="2" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="aff-lat">
+								<td scope="row">Affriquées latér.</td>
+								<td colspan="6" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="aff-lat" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="aff-lat" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="fricative latérale">
+								<td scope="row">Fricatives latér.</td>
+								<td colspan="6" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative latérale" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="fricative latérale" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative latérale" data-point="rétroflexe" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fricative latérale" data-point="palatale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="spir-lat">
+								<td scope="row">Spirantes latér.</td>
+								<td colspan="6" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spir-lat" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="spir-lat" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="spir-lat" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spir-lat" data-point="rétroflexe" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spir-lat" data-point="alv-vel" data-voix="voisée"></td>
+								<td data-mode="spir-lat" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="spir-lat" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="spir-lat" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="battues-lat">
+								<td scope="row">Battues latér.</td>
+								<td colspan="6" class="impossible"></td>
+								<td>&nbsp;</td>
+								<td data-mode="battues-lat" data-point="ling-lab" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="battues-lat" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+							<tr>
+								<td scope="col"><u><b>Non pulmoniques</b></u></td>
+								<td colspan="31">&nbsp;</td>
+							</tr>
+							<tr data-mode="occl-inj">
+								<td scope="row">Occl. injectives</td>
+								<td data-mode="occl-inj" data-point="bilabiale" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="bilabiale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-inj" data-point="lab-vel" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="lab-vel" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-inj" data-point="dentale" data-voix="voisée"></td>
+								<td data-mode="occl-inj" data-point="alvéolaire" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="alvéolaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>*</td>
+								<td>*</td>
+								<td>*</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-inj" data-point="palatale" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="palatale" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-inj" data-point="vélaire" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="vélaire" data-voix="voisée"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-inj" data-point="uvulaire" data-voix="sourde"></td>
+								<td data-mode="occl-inj" data-point="uvulaire" data-voix="voisée"></td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="occl-ej">
+								<td scope="row">Occl. éjectives</td>
+								<td data-mode="occl-ej" data-point="bilabiale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="dentale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="alvéolaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="rétroflexe" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="palatale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="vélaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="occl-ej" data-point="uvulaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td colspan="2" class="impossible"></td>
+								<td data-mode="occl-ej" data-point="epiglottal" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td colspan="2" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="affr-ej">
+								<td scope="row">Affr. éjectives</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="dentale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="alvéolaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="post-alvéolaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="rétroflexe" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="vélaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="affr-ej" data-point="uvulaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="fric-ej">
+								<td scope="row">Fric. éjectives</td>
+								<td data-mode="fric-ej" data-point="bilabiale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="labio-dentale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="dentale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="alvéolaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="post-alvéolaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="rétroflexe" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="alv-pal" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="palatale" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="vélaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td data-mode="fric-ej" data-point="uvulaire" data-voix="sourde"></td>
+								<td>&nbsp;</td>
+								<td colspan="6" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="clic-centr">
+								<td scope="row">Clics centraux</td>
+								<td colspan="2" data-mode="clic-centr" data-point="bilabiale"></td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2" data-mode="clic-centr" data-point="dentalee"></td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2" data-mode="clic-centr" data-point="post-alvéolaire"></td>
+								<td colspan="2">*</td>
+								<td colspan="2" data-mode="clic-centr" data-point="alv-pal"></td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="12" class="impossible"></td>
+							</tr>
+
+							<tr data-mode="clic-lat">
+								<td scope="row">Clics latéraux</td>
+								<td colspan="8" class="impossible"></td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2" data-mode="clic-lat" data-point="alvéolaire"></td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="2">&nbsp;</td>
+								<td colspan="12" class="impossible"></td>
+							</tr>
+						</tbody>				
 					</table>
+
+					<p class="caption">
+						Source : <a href="https://fr.wikipedia.org/wiki/Alphabet_phon%C3%A9tique_international#Consonnes">Wikipedia</a> <br>
+						Les cellules laissées blanches indiquent une articulation jugée impossible. <br>
+						Les cases marquées d'un astérisque indiquent des sons attestés encore non représentés officiellement dans l'API.<br>
+					</p> 
+
+					<h2>Voyelles</h2>
+					<div class="voyelle-container">
+						<table border="0" cellspacing="0" class="voyelle" id="voyelles">
+							<thead>
+								<tr>
+									<th rowspan="2">Ouverture</th>
+									<th colspan="2">Antérieure</th>
+									<th colspan="2">Quasi-antérieure</th>
+									<th colspan="2">Centrale</th>
+									<th colspan="2">Quasi-postérieure</th>
+									<th colspan="2">Postérieure</th>
+								</tr>
+								<tr>
+									<td>Non-arrondie</td><td>Arrondie</td>
+									<td>Non-arrondie</td><td>Arrondie</td>
+									<td>Non-arrondie</td><td>Arrondie</td>
+									<td>Non-arrondie</td><td>Arrondie</td>
+									<td>Non-arrondie</td><td>Arrondie</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-ferm_ouv="fermée">
+									<td class="label-ouverture">Fermée</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="pré-fermée">
+									<td class="label-ouverture">Pré-fermée</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="mi-fermée">
+									<td class="label-ouverture">Mi-fermée</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="moyenne">
+									<td class="label-ouverture">Moyenne</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="mi-ouverte">
+									<td class="label-ouverture">Mi-ouverte</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="pré-ouverte">
+									<td class="label-ouverture">Pré-ouverte</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+								<tr data-ferm_ouv="ouverte">
+									<td class="label-ouverture">Ouverte</td>
+									<td data-post_ant="antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-antérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="centrale" data-arrondi="arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="quasi-postérieure" data-arrondi="arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="non-arrondie"></td>
+									<td data-post_ant="postérieure" data-arrondi="arrondie"></td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="diphtongue">
+							<tr><th>Diphtongues</th></tr>
+							<tr><td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td></tr>
+						</table>
+
+						<table class="ton">
+							<table class="niveau">
+								<tr>
+									<th colspan="3">Tons de niveau</th>
+								</tr>
+								<tr>
+									<td>Ton</td>
+									<td>Diacritique</td>
+									<td>Barre</td>
+								</tr>
+								<tr>
+									<td >Haut</td>
+									<td ></td>
+									<td><span data-level="haut" data-contour="plat"></span></td>
+								</tr>
+								<tr>
+									<td>Mi-haut</td>
+									<td></td>
+									<td><span data-level="haut" data-contour="plat"></span></td>
+								</tr>
+								<tr>
+									<td>Médian</td>
+									<td></td>
+									<td><span data-level="moyen" data-contour="plat"></span></td>
+								</tr>
+								<tr>
+									<td>Mi-bas</td>
+									<td></td>
+									<td><span data-level="bas" data-contour="plat"></span></td>
+								</tr>
+								<tr>
+									<td>Bas</td>
+									<td></td>
+									<td><span data-level="bas" data-contour="plat"></span></td>
+								</tr>
+							</table>
+							
+							<table class="module">
+								<tr>
+									<th colspan="3">Tons modulés</th>
+								</tr>
+								<tr>
+									<td>Ton</td>
+									<td>Diacritique</td>
+									<td>Barre</td>
+								</tr>
+								<tr>
+									<td>Ascendant</td>
+									<td></td>
+									<td><span data-contour="montant"></span></td>
+								</tr>
+								<tr>
+									<td>Descendant</td>
+									<td></td>
+									<td><span data-contour="descendant"></span></td>
+								</tr>
+								<tr>
+									<td>Ascendant haut</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Ascendant bas</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Montant descendant</td>
+									<td></td>
+									<td><span data-contour="convexe"></span></td>
+								</tr>
+							</table>
+						</table>
 					
-					<table class="module">
-						<tr>
-							<td colspan="3">Tons modulés</td>
-						</tr>
-						<tr>
-							<td>Ton</td>
-							<td>Diacritique</td>
-							<td>Barre</td>
-						</tr>
-						<tr>
-							<td>Ascendant</td>
-							<td>ě</td>
-							<td data-contour="montant">e˩˥</td>
-						</tr>
-						<tr>
-							<td>Descendant</td>
-							<td>ê</td>
-							<td data-contour="descendant">e˥˩</td>
-						</tr>
-						<tr>
-							<td>Ascendant haut</td>
-							<td>e᷄</td>
-							<td>e˦˥</td>
-						</tr>
-						<tr>
-							<td>Ascendant bas</td>
-							<td>e᷅</td>
-							<td>e˩˨</td>
-						</tr>
-						<tr>
-							<td>Montant descendant</td>
-							<td>e᷈</td>
-							<td data-contour="convexe">e˦˥˦</td>
-						</tr>
-					</table>
-				</table>
-			
+					</div>
+
+					<h2>Descriptions phonologiques</h2>
+
+					
+						<!-- Ici, informations des pdfs -->
+						
+
+						<div id="description-phonologique">
+							Aucune description chargée.
+						</div>
 			</div>
 
-			<h2>Descriptions phonologiques</h2>
-
-			
-				<!-- Ici, informations des pdfs -->
-				
-
-				<div id="description-phonologique">
-					Aucune description chargée.
-				</div>
-			
+		</main>
 
 		<footer>Camille BENOIT-GUYOD, Catherine KOVACH, Ekaterina LEONOVA, Yoan GOUDIN, Zohre SHAFIEE</footer>
 		
