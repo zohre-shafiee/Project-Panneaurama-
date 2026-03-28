@@ -17,24 +17,22 @@ try {
     $conn = new PDO("sqlite:" . $dbfile);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // MODIFICATION DE LA REQUÊTE :
-    // On passe par phoneme_sequence pour récupérer les traits du premier symbole (position 1)
-    // Cela permet à 'ph' de récupérer les traits de 'p' et donc d'aller dans la même cellule.
+
     // Requête SQL pour tous les phonèmes (fr + autre langue)
     $sql_all = "SELECT p.phoneme_label AS label, li.id_langue, -- Symboles API pour la langue sélectionnée (+fr)
                        c.mode_dart AS mode, c.lieu_dart AS point, c.voise AS voix, -- Coordonnées des consonnes
                        v.ferm_ouv, v.post_ant, v.arrondi -- Coordonnées des voyelles
+                       t.tone_type AS type, t.contour, t.level -- Coordonnées des tons 
 
                 FROM phonemes p
 
                 JOIN language_inventory li ON p.id_phoneme = li.id_phoneme -- Jointure entre son et langue
 
-                -- Pour les séquences de phonèmes (eg affriquées ou diphtongues): ne prend en compte que le 1er car. pour le placer dans la cellulle correspondante
-                LEFT JOIN phoneme_sequence ps ON p.id_phoneme = ps.id_phoneme AND ps.position = 1    
-                                                                                                    
+                LEFT JOIN phoneme_sequence ps ON p.id_phoneme = ps.id_phoneme AND ps.position = 1                                                                                                      
                 LEFT JOIN ipa_symbols s ON ps.id_ipa = s.id_ipa
-                LEFT JOIN consonant_features c ON s.id_ipa = c.id_ipa --Récupère les traits pour les consonnes
-                LEFT JOIN vowel_features v ON s.id_ipa = v.id_ipa -- Récupère les traits pour les voyelles
+                LEFT JOIN consonant_features c ON s.id_ipa = c.id_ipa --Lien entre traits des consonnes et id
+                LEFT JOIN vowel_features v ON s.id_ipa = v.id_ipa -- Lien entre traits des voyelles et id
+                LEFT JOIN tone_features t ON s.id_ipa = t.id_ipa -- Lien entre traits des tons et id
 
                 WHERE li.id_langue IN (:id_fr, :id_select)"; // Pour le fr et la langue sélectionnée
 
@@ -67,7 +65,10 @@ try {
             'voix'      => $row['voix'],
             'ferm_ouv'  => $row['ferm_ouv'],
             'post_ant'  => $row['post_ant'],
-            'arrondi'   => $row['arrondi']
+            'arrondi'   => $row['arrondi'],
+            'type'      => $row['type'],
+            'contour'   => $row['contour'],
+            'level'     => $row['level']
         ];
 
         if ($row['id_langue'] == $id_fr) {
