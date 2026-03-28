@@ -103,6 +103,42 @@ label {
     min-height: 50px;
 }
 
+/* ********** STYLE DES PHONEMES ********** */
+.phoneme-cell {
+    display: inline-block;
+    position: relative;
+    padding: 2px 12px 2px 4px;
+    margin: 2px;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
+    font-size: 1.1em;
+    color: white !important;
+    background-color: transparent !important;
+}
+
+/* Pastilles de couleur */
+.phoneme-cell::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.present-commun::after {
+    background-color: var(--commun) !important;
+}
+
+.present-fr::after {
+    background-color: var(--fr) !important;
+}
+
+.present-autre::after {
+    background-color: var(--autre) !important;
+}
 
 /* ********** PIED DE PAGE ********** */
 footer {
