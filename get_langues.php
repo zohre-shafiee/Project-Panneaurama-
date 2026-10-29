@@ -2,11 +2,7 @@
 
 header('Content-Type: application/json');
 
-try {
-    // Connection à la bdd 
-    $dbfile = 'gestion.db';
-    $conn = new PDO("sqlite:" . $dbfile);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
     
     // Récupération langue sélectionnée 
     $sql = "SELECT id_langue, nom_langue 
@@ -21,7 +17,7 @@ try {
 } catch(PDOException $e) { 
     echo json_encode([
         'success' => false,
-        'message' => "Erreur: " . $e->getMessage()
+        'message' => 'Database request failed. Check the server error log.'
     ]);
 }
 ?>
