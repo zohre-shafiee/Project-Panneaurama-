@@ -11,11 +11,7 @@ if (!isset($_GET['id_langue']) || empty($_GET['id_langue'])) {
 
 $id_select = (int) $_GET['id_langue']; 
 
-try {
-    // Connection à la bdd
-    $dbfile = 'gestion.db';
-    $conn = new PDO("sqlite:" . $dbfile);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
 
 
     // Requête SQL pour tous les phonèmes (fr + autre langue)
@@ -77,6 +73,6 @@ try {
 
 // Gestion des erreurs 
 } catch(PDOException $e) {
-    echo json_encode(['success' => false, 'message' => 'Erreur BDD: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['success' => false, 'message' => 'Database request failed. Check the server error log.'], JSON_UNESCAPED_UNICODE);
 }
 ?>
