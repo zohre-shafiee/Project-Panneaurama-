@@ -2,7 +2,9 @@
 
 header('Content-Type: application/json');
 
-try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
+try {
+    require_once __DIR__ . '/db_connect.php';
+    $conn = panneaux_db();
     
     // Récupération langue sélectionnée 
     $sql = "SELECT id_langue, nom_langue 
