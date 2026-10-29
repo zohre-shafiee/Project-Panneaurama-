@@ -11,7 +11,9 @@ if (!isset($_GET['id_langue']) || empty($_GET['id_langue'])) {
 
 $id_select = (int) $_GET['id_langue']; 
 
-try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
+try {
+    require_once __DIR__ . '/db_connect.php';
+    $conn = panneaux_db();
 
 
     // Requête SQL pour tous les phonèmes (fr + autre langue)
