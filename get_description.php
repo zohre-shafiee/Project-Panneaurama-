@@ -37,7 +37,7 @@ try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
     echo json_encode($description, JSON_UNESCAPED_UNICODE);
 
 // Gestion des erreurs
-} catch(PDOException $e) {
+} catch(Throwable $e) {
     echo json_encode([
         'success' => false,
         'message' => 'Database request failed. Check the server error log.'
