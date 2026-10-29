@@ -12,7 +12,9 @@ if (!isset($_GET['id_langue']) || empty($_GET['id_langue'])) {
 
 $id_langue = (int) $_GET['id_langue'];
 
-try {\n    require_once __DIR__ . '/db_connect.php';\n    $conn = panneaux_db();
+try {
+    require_once __DIR__ . '/db_connect.php';
+    $conn = panneaux_db();
 
     //Récupération des descriptions phonologiques
     $sql = "SELECT description_text
