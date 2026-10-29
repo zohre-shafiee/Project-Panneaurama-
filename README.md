@@ -102,7 +102,7 @@ The bundled database and environment may require local setup or adjustments. Thi
 
 ## Teamwork and contribution
 
-Phonorama was developed as a **university team project**, not a solo project.
+Phonorama was developed as a **five-person university team project** by **Yoann Goudin, Ekaterina Leonova, Catherine Kovach, Camille Benoit-Guyod, and Zohré Shafiee** at Université Grenoble Alpes. It was a collaborative project, not a solo project.
 
 My involvement included developing parts of the web application with **JavaScript and PHP** and working with **SQLite**. The codebase represents collaborative work, and I do not claim exclusive authorship of all components.
 
